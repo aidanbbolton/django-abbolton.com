@@ -89,7 +89,8 @@
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-camera-fill fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Photography</h3>
+                            {% url 'public:about' as about_url %}
+                            <h3 class="h4 mb-2">Photography</h3></a>
                             <!-- <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p> -->
                         </div>
                     </div>
@@ -121,16 +122,16 @@
                             <img class="img-fluid" src="{% static 'theme/assets/img/portfolio/thumbnails/mitm.jpg' %}" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Networking</div>
-                                <div class="project-name"> MITM Attack Demo</div>
+                                <div class="project-name">MITM Attack Demo</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="{% static 'theme/assets/img/portfolio/fullsize/2.jpg' %}" title="Project Name">
-                            <img class="img-fluid" src="{% static 'theme/assets/img/portfolio/thumbnails/2.jpg' %}" alt="..." />
+                        <a class="portfolio-box" href="{% static 'theme/assets/img/portfolio/thumbnails/opengl.jpg' %}" title="<a href='https://github.com/aidanbbolton/mill-scene'>Scene Repo</a>">
+                            <img class="img-fluid" src="{% static 'theme/assets/img/portfolio/thumbnails/opengl.jpg' %}" alt="..." />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50">Computer Graphics</div>
+                                <div class="project-name">3-D Scene with lighting using OpenGL</div>
                             </div>
                         </a>
                     </div>
@@ -143,7 +144,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <!-- <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="{% static 'theme/assets/img/portfolio/fullsize/4.jpg' %}" title="Project Name">
                             <img class="img-fluid" src="{% static 'theme/assets/img/portfolio/thumbnails/4.jpg' %}" alt="..." />
                             <div class="portfolio-box-caption">
@@ -169,7 +170,7 @@
                                 <div class="project-name">Project Name</div>
                             </div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
