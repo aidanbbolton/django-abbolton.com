@@ -16,8 +16,10 @@ RUN apt-get update && \
 
 COPY requirements/prod.txt ./requirements/prod.txt
 RUN pip install -r ./requirements/prod.txt
- 
+
+COPY Makefile ./Makefile
 COPY  abbolton_website ./abbolton_website
+
 
 EXPOSE 8000
 
